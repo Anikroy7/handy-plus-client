@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Vector Hammer",
+        "price": 50,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 300,
+        "availableQuantity": 3000
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 60,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 5050,
+        "availableQuantity": 9000
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 80,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 560,
+        "availableQuantity": 55000
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 10,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 550,
+        "availableQuantity": 60400
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 10,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 520,
+        "availableQuantity": 56000
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 9,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 750,
+        "availableQuantity": 6100
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 40,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 850,
+        "availableQuantity": 6200
+    },
+    {
+        "name": "Drill Mechine",
+        "price": 80,
+        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
+        "minimumQuantity": 100,
+        "availableQuantity": 5500
+    }
+]
