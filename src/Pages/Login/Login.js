@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
     const [
@@ -95,6 +96,9 @@ const Login = () => {
                 </form>
                 <p className='mt-5'>New to Handy Plus? <span className='text-primary'><Link to='/signup'>Create New Account</Link></span></p>
                 <div className="divider">OR</div>
+                <div>
+                    <SocialLogin></SocialLogin>
+                </div>
             </div>
         </div>
     );

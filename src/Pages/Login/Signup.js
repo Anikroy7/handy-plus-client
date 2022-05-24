@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import SocialLogin from './SocialLogin';
+
 
 const Signup = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -152,6 +154,7 @@ const Signup = () => {
                 </form>
                 <p className='mt-5'>Already have an account? <span className='text-primary'><Link to='/login'>Login</Link></span></p>
                 <div className="divider">OR</div>
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );
