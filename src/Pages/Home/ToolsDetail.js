@@ -3,10 +3,10 @@ import { useWatch } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
 const ToolsDetail = ({ tool }) => {
-    const { name, minimumQuantity, availableQuantity, price, image, Description } = tool;
+    const { name, minimumQuantity, availableQuantity, price, image, Description, _id } = tool;
     const navigate = useNavigate();
-    const handelNavigate = () => {
-        navigate('/purchase')
+    const handelNavigate = id => {
+        navigate(`/purchase/${id}`)
     }
 
     return (
@@ -24,7 +24,7 @@ const ToolsDetail = ({ tool }) => {
                     <div class="badge badge-outline">Avilable Quantity: ${availableQuantity}</div>
                 </div>
             </div>
-            <button onClick={handelNavigate} class="btn btn-active btn-secondary">Purchase</button>
+            <button onClick={() => handelNavigate(_id)} class="btn btn-active btn-secondary">Purchase</button>
         </div>
     );
 };

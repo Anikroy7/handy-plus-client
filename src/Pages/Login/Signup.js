@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 import SocialLogin from './SocialLogin';
@@ -15,33 +15,31 @@ const Signup = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const navigate = useNavigate();
     let signUpError;
     if (user) {
-        navigate('/')
+        navigate('/');
+
     }
 
-    if (loading) {
+    if (loading || updating) {
         return <Loading></Loading>
     }
 
-    if (error) {
-        signUpError = <p>{error?.message}</p>
+    if (error || updateError) {
+        signUpError = <p>{error?.message}||{updateError?.message}</p>
     }
 
-    const onSubmit = data => {
+    const onSubmit = async data => {
         console.log(data)
         const email = data.email;
+        const name = data.name;
         const password = data.password;
-        const confirmPassword = data.confirmPassword;
-        if (password === confirmPassword) {
-            console.log('ok');
-            createUserWithEmailAndPassword(email, password)
-        }
-        else {
-            signUpError = <p>{'Your password is wrong'}</p>
+        console.log('ok');
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name })
 
-        }
     }
     return (
         <div>
@@ -120,39 +118,13 @@ const Signup = () => {
                         </label>
 
                     </div>
-                    <div className="form-control w-full max-w-xs">
-                        <label className="label">
-                            <span className="label-text">Confirm Password</span>
-                        </label>
-                        <input
-                            type="password"
-                            placeholder="Confirm your Password"
-                            className="input input-bordered w-full max-w-xs"
-                            {...register("confirmPassword", {
-                                required: {
-                                    value: true,
-                                    message: 'password is required'
-                                },
-                                minLength: {
-                                    value: 6,
-                                    message: 'Must be six characters or long'
-                                }
-                            })}
-                        />
-                        <label className="label">
-                            {errors.confirmPassword?.type === 'required' && <span className="label-text-alt text-red-700">{errors.confirmPassword?.message}</span>}
-                            {errors.confirmPassword?.type === 'minLength' && <span className="label-text-alt text-red-400">{errors.confirmPassword?.message}</span>}
-
-                        </label>
-
-                        <div>{signUpError}</div>
-                    </div>
+                    <div>{signUpError}</div>
                     <div>
 
                         <input className='btn btn-error text-yellow-100 w-full max-w-xs' type="submit" value='Log in' />
                     </div>
                 </form>
-                <p className='mt-5'>Already have an account? <span className='text-primary'><Link to='/login'>Login</Link></span></p>
+                <p className='mt-5'>Already have an account? <span className='text-primary'><Link to='/login'>Sign up</Link></span></p>
                 <div className="divider">OR</div>
                 <SocialLogin></SocialLogin>
             </div>
