@@ -10,6 +10,10 @@ import Signup from './Pages/Login/Signup';
 import Purchase from './Pages/Purchase/Purchase';
 import Footer from './Pages/Shared/Footer';
 import Header from './Pages/Shared/Header';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrder from './Pages/Dashboard/MyOrder';
+import AddReview from './Pages/Dashboard/AddReview';
+import MyProfile from './Pages/Dashboard/MyProfile';
 
 function App() {
   return (
@@ -19,6 +23,17 @@ function App() {
         <Route path='/' element={<Home></Home>}> </Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signup' element={<Signup></Signup>}></Route>
+        <Route path='/dashboard' element={
+          <RequireAuth>
+            <Dashboard>
+            </Dashboard>
+          </RequireAuth>
+        }>
+          <Route index element={<MyOrder></MyOrder>}></Route>
+          <Route path='myOrder' element={<MyOrder></MyOrder>}></Route>
+          <Route path='addReview' element={<AddReview></AddReview>}></Route>
+          <Route path='myProfile' element={<MyProfile></MyProfile>}></Route>
+        </Route>
         <Route path='purchase/:id' element={
           <RequireAuth>
             <Purchase></Purchase>

@@ -1,4 +1,3 @@
-import { data } from 'autoprefixer';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
@@ -19,6 +18,7 @@ const Purchase = () => {
             .then(data => {
                 setTool(data)
                 setOrder(data)
+
             })
     }, [])
     const handelOrderValue = event => {

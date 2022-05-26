@@ -23,7 +23,15 @@ const Login = () => {
     }
 
     if (error) {
-        loginError = <p>{error?.message}</p>
+        if (error.message === 'Firebase: Error (auth/wrong-password).') {
+            loginError = <p className='text-red-600 mb-4'>Your password is wrong</p>
+        }
+        else if (error.message === 'Firebase: Error (auth/user-not-found).') {
+            loginError = <p className='text-red-600 mb-4'>User No found !! <Link className='text-green-800' to={'/signup'}>Create Account Please</Link></p>
+        }
+        else {
+            loginError = <p className='text-red-600 mb-4'>{error.message}</p>
+        }
     }
 
     if (loading) {
