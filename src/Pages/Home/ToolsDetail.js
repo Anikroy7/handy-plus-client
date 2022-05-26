@@ -1,5 +1,4 @@
 import React from 'react';
-import { useWatch } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
 const ToolsDetail = ({ tool }) => {
@@ -11,7 +10,7 @@ const ToolsDetail = ({ tool }) => {
 
     return (
         <div class="card  bg-base-100 drop-shadow-xl">
-            <figure><img src={"https://api.lorem.space/image/shoes?w=400&h=225"} alt="Shoes" /></figure>
+            <figure><img src={image} alt="Shoes" /></figure>
             <div class="card-body">
                 <h2 class="card-title">
                     {name}
