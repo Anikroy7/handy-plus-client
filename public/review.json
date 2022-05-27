@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Robert Brucce",
+        "description": "I edited the original post to represent the current state. I followed your instructions and added link as a named import. Also I substituted with @apollo/react-hooks. I moved the code in question into my class constructor of my GamePage. That is acutally the place I will need it later on to fill in data. I also added Pictures to all errors I am getting in the Browser.",
+        "ratings": "⍟⍟⍟⍟⍟⍟"
+    },
+    {
+        "name": "Lily Chawla",
+        "description": "I edited the original post to represent the current state. I followed your instructions and added link as a named import. Also I substituted with @apollo/react-hooks. I moved the code in question into my class constructor of my GamePage. That is acutally the place I will need it later on to fill in data. I also added Pictures to all errors I am getting in the Browser.",
+        "ratings": "⍟⍟"
+    },
+    {
+        "name": "David loisy",
+        "description": "I edited the original post to represent the current state. I followed your instructions and added link as a named import. Also I substituted with @apollo/react-hooks. I moved the code in question into my class constructor of my GamePage. That is acutally the place I will need it later on to fill in data. I also added Pictures to all errors I am getting in the Browser.",
+        "ratings": "⍟⍟⍟⍟"
+    },
+    {
+        "name": "Lara val",
+        "description": "I edited the original post to represent the current state. I followed your instructions and added link as a named import. Also I substituted with @apollo/react-hooks. I moved the code in question into my class constructor of my GamePage. That is acutally the place I will need it later on to fill in data. I also added Pictures to all errors I am getting in the Browser.",
+        "ratings": "⍟⍟⍟"
+    }
+]
