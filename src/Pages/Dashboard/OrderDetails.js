@@ -1,7 +1,8 @@
 import React from 'react';
 
-const OrderDetails = ({ order, user, i }) => {
-    const { toolName, price, orderedToolQuantity } = order
+const OrderDetails = ({ order, user, i, setDeletedTool }) => {
+    const { toolName, price, orderedToolQuantity, _id } = order;
+
     return (
         <tr>
             <th>{i + 1}</th>
@@ -11,7 +12,8 @@ const OrderDetails = ({ order, user, i }) => {
             <td>{orderedToolQuantity}</td>
             <td>
                 <button class="btn btn-xs btn-success mr-3">Payment</button>
-                <button class="btn btn-xs btn-error">Delete</button>
+
+                <label onClick={() => setDeletedTool(order)} class=" modal-button btn btn-xs btn-error" for="delete-tool-modal" >Delete</label>
             </td>
         </tr>
 

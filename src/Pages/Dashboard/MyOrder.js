@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useQuery } from 'react-query';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import DeleteToolModal from './DeleteToolModal';
 import OrderDetails from './OrderDetails';
 
 const MyOrder = () => {
     const [user] = useAuthState(auth);
+    const [deletedTool, setDeletedTool] = useState(null)
 
-    const { isLoading, data: ordered } = useQuery('orderedTools', () =>
+    const { isLoading, data: ordered, refetch } = useQuery('orderedTools', () =>
         fetch(`http://localhost:5000/orders/${user.email}`).then(res =>
             res.json()
         )
@@ -41,12 +43,20 @@ const MyOrder = () => {
                                 i={i}
                                 order={order}
                                 user={user}
+                                setDeletedTool={setDeletedTool}
                             ></OrderDetails>)
                         }
 
                     </tbody>
                 </table>
             </div>
+            {
+                deletedTool && <DeleteToolModal
+                    deletedTool={deletedTool}
+                    setDeletedTool={setDeletedTool}
+                    refetch={refetch}
+                ></DeleteToolModal>
+            }
         </div>
     );
 };
