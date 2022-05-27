@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
+import Loading from '../Shared/Loading';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
 
-
+    const [loadProfile, setLoadProfile] = useState({});
     const handelMyProfile = event => {
         event.preventDefault()
         const name = event.target.name.value;
@@ -18,7 +20,7 @@ const MyProfile = () => {
         const profile = {
             email, name, phone, address, age, education
         }
-        console.log(profile);
+
         fetch(`http://localhost:5000/profile/${user.email}`, {
             method: 'PUT',
             headers: {
@@ -29,12 +31,26 @@ const MyProfile = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if (data.insertedId) {
+                if (data.modifiedCount > 0) {
                     toast.success(`${name} , Your profile is updated`)
+                    event.target.reset()
+                    fetch(`http://localhost:5000/profile/${user.email}`)
+                        .then(res => res.json())
+                        .then(data => setLoadProfile(data.result))
+                }
+                else {
+                    toast('no update for you')
                     event.target.reset()
                 }
             })
+
+
+
+
+
     }
+    console.log(loadProfile);
+
 
     return (
         <div class="hero min-h-screen bg-base-200">
@@ -43,6 +59,12 @@ const MyProfile = () => {
                     <h1 class="text-5xl font-bold">My Profile!</h1>
                     <p class="m-3">Name : {user.displayName}</p>
                     <p class="m-3">Email : {user.email}</p>
+                    <p class="m-3">Address : {loadProfile.address}</p>
+                    <p class="m-3">Age : {loadProfile.age}</p>
+                    <p class="m-3">Phone : {loadProfile.phone}</p>
+                    <p class="m-3">Education : {loadProfile.education}</p>
+
+                    {/* <p>{profile?.address}</p> */}
 
                 </div>
                 <div class="card flex-shrink-0 w-80 max-w-sm shadow-2xl bg-base-100">

@@ -11,6 +11,7 @@ const AddReview = () => {
         const review = {
             name, description, ratings
         }
+
         fetch('http://localhost:5000/reviews', {
             method: 'POST',
             headers: {
