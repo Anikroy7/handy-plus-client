@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
-import Loading from '../Shared/Loading';
+
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
 
     const [loadProfile, setLoadProfile] = useState({});
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/profile/${user.email}`)
+            .then(res => res.json())
+            .then(data => setLoadProfile(data.result))
+    }, [user])
     const handelMyProfile = event => {
         event.preventDefault()
         const name = event.target.name.value;

@@ -9,6 +9,7 @@ const Header = () => {
     const handelLogout = () => {
 
         signOut(auth);
+        localStorage.removeItem('access-token')
     }
 
 

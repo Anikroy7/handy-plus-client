@@ -33,7 +33,7 @@ const AddReview = () => {
 
     return (
         <div className='w-72 bg-slate-400 mx-auto p-14'>
-            <h3 className='text-white text-xl font-bold text-center mt-3 mb-4'>Add Items</h3>
+            <h3 className='text-white text-xl font-bold text-center mt-3 mb-4'>Add Reviews</h3>
             <form onSubmit={handelAddReview}>
                 <input type="text" required name='name' placeholder="Type your name" class="input input-bordered w-full max-w-xs mb-2" />
                 <input type="text" required name='description' placeholder="Type your description" class="input input-bordered mb-2 w-full max-w-xs" />
