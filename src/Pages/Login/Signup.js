@@ -123,7 +123,7 @@ const Signup = () => {
                     <div>{signUpError}</div>
                     <div>
 
-                        <input className='btn btn-error text-yellow-100 w-full max-w-xs' type="submit" value='Log in' />
+                        <input className='btn btn-error text-yellow-100 w-full max-w-xs' type="submit" value='Sign up' />
                     </div>
                 </form>
                 <p className='mt-5'>Already have an account? <span className='text-primary'><Link to='/login'>Sign up</Link></span></p>
