@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useQuery } from 'react-query';
-import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Loading from '../Shared/Loading';
 
 const AllUser = () => {
 
-
-
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/user')
-    //         .then(res => res.json())
-    //         .then(data => setUsers(data))
-    // }, [])
 
     const { isLoading, data: users, refetch } = useQuery('allusers', () =>
         fetch(`http://localhost:5000/user`, {

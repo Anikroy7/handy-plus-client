@@ -9,6 +9,7 @@ const useToken = user => {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json',
+                    authorization: `bearer ${localStorage.getItem('access-token')}`
                 },
                 body: JSON.stringify(userEmail)
             })
