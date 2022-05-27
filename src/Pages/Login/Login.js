@@ -98,6 +98,9 @@ const Login = () => {
                         </label>
                         {loginError}
                     </div>
+                    <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
                     <div>
                         <input className='btn btn-error text-yellow-100 w-full max-w-xs' type="submit" value='Log in' />
                     </div>
