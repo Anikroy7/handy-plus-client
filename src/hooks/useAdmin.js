@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 const useAdmin = user => {
 
     const [admin, setAdmin] = useState(false);
+    const [adminLoader, setAdminLoader] = useState(true);
     useEffect(() => {
         const email = user?.email;
         if (email) {
@@ -10,6 +11,7 @@ const useAdmin = user => {
                 method: 'GET',
                 headers: {
                     'Content-type': 'application/json',
+
                 },
 
             })
@@ -17,10 +19,11 @@ const useAdmin = user => {
                 .then(data => {
                     console.log('data inside admin', data);
                     setAdmin(data.admin)
+                    setAdminLoader(false)
                 })
         }
     }, [user])
-    return [admin]
+    return [admin, adminLoader]
 }
 
 export default useAdmin;
