@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 
 const DleletetoolModal = ({ deleteTool, setDeleteTool, refetch }) => {
     const { name, _id } = deleteTool;
+    console.log(deleteTool);
 
     const handelToolDelete = id => {
         console.log(id);

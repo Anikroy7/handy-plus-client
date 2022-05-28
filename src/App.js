@@ -18,6 +18,7 @@ import AllUser from './Pages/Dashboard/AllUser';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import ManageAllProducts from './Pages/ManageAllProducts/ManageAllProducts';
 import NotFound from './Pages/NotFound/NotFound';
+import AddTools from './Pages/ManageAllProducts/AddTools';
 
 function App() {
   return (
@@ -52,6 +53,13 @@ function App() {
           <RequireAuth>
             <RequireAdmin>
               <ManageAllProducts></ManageAllProducts>
+            </RequireAdmin>
+          </RequireAuth>
+        }></Route>
+        <Route path='addtools' element={
+          <RequireAuth>
+            <RequireAdmin>
+              <AddTools></AddTools>
             </RequireAdmin>
           </RequireAuth>
         }></Route>

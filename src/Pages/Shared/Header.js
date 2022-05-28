@@ -28,7 +28,11 @@ const Header = () => {
                         }
 
                         {
-                            admin && <li><Link to={'/alltools'}>Manage All Tools</Link></li>
+                            admin && <div>
+                                <li><Link to={'/alltools'}>Manage All Tools</Link></li>
+                                <li><Link to={'/addtools'}>Add Tools</Link></li>
+                            </div>
+
                         }
                         <li tabindex="0">
                             <a class="justify-between">
@@ -48,7 +52,10 @@ const Header = () => {
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
                     {
-                        admin && <li><Link to={'/alltools'}>Manage All Tools</Link></li>
+                        admin && <div className='flex px-3'>
+                            <li><Link to={'/alltools'}>Manage All Tools</Link></li>
+                            <li><Link to={'/addtools'}>Add Tools</Link></li>
+                        </div>
                     }
                     {
                         user && <li><Link to={'/dashboard'}>Dashboard</Link></li>
