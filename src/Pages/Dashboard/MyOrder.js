@@ -13,7 +13,7 @@ const MyOrder = () => {
     const [deletedTool, setDeletedTool] = useState(null)
 
     const { isLoading, data: ordered, refetch } = useQuery('orderedTools', () =>
-        fetch(`http://localhost:5000/orders/${user.email}`, {
+        fetch(`https://morning-thicket-25612.herokuapp.com/orders/${user.email}`, {
             method: 'GET',
             headers: {
                 'authorization': `bearer ${localStorage.getItem('access-token')}`

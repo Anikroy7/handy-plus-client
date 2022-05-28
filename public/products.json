@@ -2,65 +2,49 @@
     {
         "name": "Vector Hammer",
         "price": 50,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
+        "image": "https://i.ibb.co/j8MZqLD/Claw-hammer.jpg",
         "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 300,
-        "availableQuantity": 3000
+        "minimumQuantity": 40,
+        "availableQuantity": 300
     },
     {
         "name": "Drill Mechine",
         "price": 60,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 5050,
-        "availableQuantity": 9000
+        "image": "https://4.imimg.com/data4/IH/VK/MY-3228012/bosch-drill-machine-13-mm-500x500.jpg",
+        "Description": "All Types of Drilling Machine. Robust Design, Premium Quality with Unbeatable Features. Guarantee for Noiseless, Flawless and Easy to Operate Drilling Equipment, Affordable Price. Experienced Promoters. Unmatched Performance. Quick Response. Reputed Clientele.",
+        "minimumQuantity": 50,
+        "availableQuantity": 100
     },
     {
-        "name": "Drill Mechine",
+        "name": "Screwdriver",
         "price": 80,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 560,
-        "availableQuantity": 55000
+        "image": "https: //i.ibb.co/k2LZt9V/download-1.jpg",
+        "Description": "screwdriver, tool, usually hand-operated, for turning screws with slotted heads. For screws with one straight diametral slot cut across the head, standard screwdrivers with flat blade tips.",
+        "minimumQuantity": 60,
+        "availableQuantity": 550
     },
     {
-        "name": "Drill Mechine",
+        "name": "Wrench",
         "price": 10,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 550,
-        "availableQuantity": 60400
+        "image": "https: //i.ibb.co/FbRDt45/download-2.jpg",
+        "Description": "A wrench or spanner is a tool used to provide grip and mechanical advantage in applying torque to turn objects—usually rotary fasteners, such as nuts and bolts—or keep them from turning.",
+        "minimumQuantity": 50,
+        "availableQuantity": 600
     },
     {
-        "name": "Drill Mechine",
+        "name": "Pliers",
         "price": 10,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 520,
-        "availableQuantity": 56000
+        "image": "https: //i.ibb.co/8N2KPp1/download.jpg",
+        "Description": "Pliers are a hand tool used to hold objects firmly, possibly developed from tongs used to handle hot metal in Bronze Age Europe.",
+        "minimumQuantity": 50,
+        "availableQuantity": 560
     },
     {
-        "name": "Drill Mechine",
+        "name": "Measuring Tape",
         "price": 9,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 750,
-        "availableQuantity": 6100
-    },
-    {
-        "name": "Drill Mechine",
-        "price": 40,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 850,
-        "availableQuantity": 6200
-    },
-    {
-        "name": "Drill Mechine",
-        "price": 80,
-        "image": "https://image.shutterstock.com/image-vector/colorful-cartoon-claw-hammer-handyman-260nw-1119415058.jpg",
-        "Description": "Hammer is first Indian athleisure audio tech brand providing stylish and extraordinary range in audio and fitness devices for a healthy lifestyle and comfort.",
-        "minimumQuantity": 100,
-        "availableQuantity": 5500
+        "image": "https: //i.ibb.co/HGzJ1xV/screwdriver-33634-480.webp",
+        "Description": "A tape measure, also called measuring tape, is a type of flexible ruler. Tape measures are made from a variety of materials, including fiber glass, plastic and cloth.",
+        "minimumQuantity": 50,
+        "availableQuantity": 610
     }
 ]

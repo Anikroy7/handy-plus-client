@@ -15,7 +15,7 @@ const AddTools = () => {
             name, Description, minimumQuantity, availableQuantity, price, image
         }
         console.log(tool);
-        fetch(`http://localhost:5000/tools`, {
+        fetch(`https://morning-thicket-25612.herokuapp.com/tools`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

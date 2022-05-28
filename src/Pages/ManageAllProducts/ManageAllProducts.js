@@ -7,7 +7,7 @@ const ManageAllProducts = () => {
 
     const [deleteTool, setDeleteTool] = useState(null);
     const { isLoading, data: allTools, refetch } = useQuery('allTools', () =>
-        fetch(`http://localhost:5000/tools`, {
+        fetch(`https://morning-thicket-25612.herokuapp.com/tools`, {
             method: 'GET',
             headers: {
                 'authorization': `bearer ${localStorage.getItem('access-token')}`

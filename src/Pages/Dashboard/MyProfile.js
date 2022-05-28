@@ -11,7 +11,7 @@ const MyProfile = () => {
     const [loadProfile, setLoadProfile] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/profile/${user.email}`)
+        fetch(`https://morning-thicket-25612.herokuapp.com/profile/${user.email}`)
             .then(res => res.json())
             .then(data => setLoadProfile(data.result))
     }, [user])
@@ -27,7 +27,7 @@ const MyProfile = () => {
             email, name, phone, address, age, education
         }
 
-        fetch(`http://localhost:5000/profile/${user.email}`, {
+        fetch(`https://morning-thicket-25612.herokuapp.com/profile/${user.email}`, {
             method: 'PUT',
             headers: {
                 "Content-type": 'application/json'
@@ -40,7 +40,7 @@ const MyProfile = () => {
 
                 toast.success(`${name} , Your profile is updated`)
                 event.target.reset()
-                fetch(`http://localhost:5000/profile/${user.email}`)
+                fetch(`https://morning-thicket-25612.herokuapp.com/profile/${user.email}`)
                     .then(res => res.json())
                     .then(data => setLoadProfile(data.result))
 
