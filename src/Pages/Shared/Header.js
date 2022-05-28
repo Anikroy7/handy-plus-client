@@ -3,9 +3,11 @@ import React from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useAdmin from '../../hooks/useAdmin';
 
 const Header = () => {
     const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user);
     const handelLogout = () => {
 
         signOut(auth);
@@ -24,6 +26,10 @@ const Header = () => {
                         {
                             user && <li><Link to={'/dashboard'}>Dashboard</Link></li>
                         }
+
+                        {
+                            admin && <li><Link to={'/alltools'}>Manage All Tools</Link></li>
+                        }
                         <li tabindex="0">
                             <a class="justify-between">
                                 Parent
@@ -41,6 +47,9 @@ const Header = () => {
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
+                    {
+                        admin && <li><Link to={'/alltools'}>Manage All Tools</Link></li>
+                    }
                     {
                         user && <li><Link to={'/dashboard'}>Dashboard</Link></li>
                     }

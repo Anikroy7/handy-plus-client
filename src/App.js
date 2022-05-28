@@ -16,6 +16,8 @@ import AddReview from './Pages/Dashboard/AddReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AllUser from './Pages/Dashboard/AllUser';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import ManageAllProducts from './Pages/ManageAllProducts/ManageAllProducts';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -46,6 +48,14 @@ function App() {
             <Purchase></Purchase>
           </RequireAuth>
         }></Route>
+        <Route path='alltools' element={
+          <RequireAuth>
+            <RequireAdmin>
+              <ManageAllProducts></ManageAllProducts>
+            </RequireAdmin>
+          </RequireAuth>
+        }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>

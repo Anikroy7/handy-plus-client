@@ -4,7 +4,13 @@ import ReviewDetails from './ReviewDetails';
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('http://localhost:5000/reviews', {
+
+            headers: {
+                'authorization': `bearer ${localStorage.getItem('access-token')}`
+            }
+
+        })
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
