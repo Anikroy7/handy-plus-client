@@ -7,7 +7,7 @@ const DleletetoolModal = ({ deleteTool, setDeleteTool, refetch }) => {
 
     const handelToolDelete = id => {
         console.log(id);
-        fetch(`https://morning-thicket-25612.herokuapp.com/${id}`, {
+        fetch(`https://morning-thicket-25612.herokuapp.com/tools/${id}`, {
             method: 'DELETE'
         }).then(res => res.json())
             .then(data => {
