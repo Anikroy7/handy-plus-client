@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+### Handy Plus Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+live site link : https://handy-plus-5a529.web.app/
 
-## Available Scripts
+## why this? 
 
-In the project directory, you can run:
+In this websiter u can do order tools for different kinds of homework or anything. you can order from available quntity. you can pay for it . you can see your order in my order page .
 
-### `yarn start`
+## What route Implement ??
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I implement blogs , portfolio, dashboard route for this website. I use nested routing for dashboard . you can see your order and you can delete this. you can also see my profile page . you can store your information in this page. you also can update this information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### login sytem?
 
-### `yarn test`
+I use email and password based authentication and google authentication systen for this website . if you any mistake for login this site i show the error on ui.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## admin and non-admin 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A admin can make other member normal user to an admin . a admin can not pay and order but admin can see his profile admin see other two route for manage tools. he can add tools and delete tools from website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### what technology use??
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I use many kinds of technology for make this website . Such as HTML, css , tailwind css ,daisy ui , react , mongodb ,firebse ,react-query, react-form-hook,js,node js for backend .

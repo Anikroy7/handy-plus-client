@@ -20,6 +20,8 @@ import ManageAllProducts from './Pages/ManageAllProducts/ManageAllProducts';
 import NotFound from './Pages/NotFound/NotFound';
 import AddTools from './Pages/ManageAllProducts/AddTools';
 import Payment from './Pages/Dashboard/Payment';
+import Blogs from './Pages/Blogs/Blogs';
+import MyPortfolio from './Pages/Blogs/MyPortfolio';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path='/' element={<Home></Home>}> </Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signup' element={<Signup></Signup>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/dashboard' element={
           <RequireAuth>
             <Dashboard>

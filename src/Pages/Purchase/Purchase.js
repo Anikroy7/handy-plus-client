@@ -13,7 +13,7 @@ const Purchase = () => {
 
     console.log(tool);
     useEffect(() => {
-        fetch(`https://morning-thicket-25612.herokuapp.com/tools/${id}`)
+        fetch(`https://morning-thicket-25612.herokuapp.com/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTool(data)
