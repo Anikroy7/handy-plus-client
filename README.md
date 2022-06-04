@@ -1,6 +1,6 @@
 ### Handy Plus Website
 
-live site link : https://handy-plus-5a529.web.app/
+Live site link for client : https://handy-plus-5a529.web.app/
 
 ## why this? 
 
